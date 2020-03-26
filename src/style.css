@@ -85,12 +85,6 @@ header{
     background-size: cover;
 }
 
-.transparent{
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
 .fondoNav{
     width: 100%;
     height: 100px;
