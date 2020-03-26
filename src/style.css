@@ -1,21 +1,93 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color: #27377A;
+}
+:root{
+    --color: #CDFEE1;
+}
+:root{
+    --color: #FFCB11;
+}
+:root{
+    --color: #146C1D;
 }
 
 body{
-    margin: 0;
-    padding: 0;
-    width: auto;
+    width: 100%;
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
 
-}
-.fb,
-.ig{
-    width: 100px;
+.redes{
+    width: 200px;
     height: 100px;
-    margin: 8px 6px 100px 0;
-    padding: 0;
-    display: inline;
+    flex-wrap: wrap;
 }
+
+.follow{
+    color: white;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial;
+    font-weight: bold;
+    margin: 6px 16px;
+    padding: 2px;
+    display: block;
+}
+
+.fb{
+    width: 50px;
+    margin: 4px 6px 4px 16px; 
+    display: inline-block;
+}
+
+.ig{
+    width: 52px;
+    margin: 4px 2px;
+    display: inline-block;
+}
+
+.inputSearch{
+    width: 300px;
+    height: 100px;
+    flex-wrap: nowrap;
+}
+
+.search{
+    width: 200px;
+    height: 40px;
+    color: #CDFEE1;
+    border-radius: 5px;
+    border: 4px solid #146C1D;
+    margin: 30px 4px 10px 80px;
+}
+
+.container{
+    width: 85%;
+    max-width: 1280px;
+    margin: 0;
+}
+
+.photo{
+    width: 100%;
+}
+
+.portada{
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
