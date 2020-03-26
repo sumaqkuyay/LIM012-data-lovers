@@ -1,0 +1,58 @@
+/*seccion de los cards*/
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.dataGeneral{
+    margin: 28px;
+    display: flex;
+    text-align: center; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 110px;
+}
+.card{
+    width: 200px;
+    height: 280px;
+    display: flex;
+    background-image:url("Imagenes/fondoCard1.jpg");
+    border: 3px solid rgb(45, 43, 150);
+}
+
+/*valores del card*/
+.number {
+    width:20px;
+    height:20px;
+    position: relative;
+    color:#fff;
+    font-size: 11px;
+    font-family: sans-serif, "Nanum Gothic";
+  }
+.imgPokemon {
+    width: 135px;
+    height: 135px;
+    background: rgb(187, 241, 214);
+    border-radius: 8px;
+    border: 3px solid rgb(45, 43, 150);
+}
+.pokeName {
+    font-size: 19px;
+    text-align: center;
+    font-family: sans-serif, "Nanum Gothic";
+    color:#fff;
+    font-weight: bold;
+}
+.maxCp{
+    width:200px;
+    background-color: goldenrod;
+    cursor: default;
+    text-align: center;
+}
+.types{
+    color:#fff;
+    cursor: default;
+    background-color: #495743;
+    text-align: center; 
+}
