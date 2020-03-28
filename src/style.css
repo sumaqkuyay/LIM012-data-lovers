@@ -28,36 +28,28 @@ header{
     align-items: center;
     align-content: center;
     position: fixed;
-    left: 0;
-    top: 0;
     width: 100%;
 }
 /*contenedor de muestras redes*/
 .redes{
     width: 140px;
     height: 100px;
-    flex-wrap: wrap;
     display: block;
 }
-
 .follow{
     color:var(--color#27377A);
     font-size: 14px;
     font-weight: bold;
-    margin: 10px 0 6px 20px;
+    margin: 10px 0 4px 20px;
     display: inline-block;
 }
-
 .fb{
     width: 40px;
     margin: 2px 3px 4px 16px; 
-    display: inline-block;
 }
-
 .ig{
-    width: 42px;
-    margin: 2px 2px;
-    display: inline-block;
+    width: 40px;
+    margin: 2px 2px 4px 1px;
 }
 /*contenedor de nuestra búsqueda*/
 .inputSearch{
@@ -66,14 +58,13 @@ header{
     flex-wrap: nowrap;
     display: block;
 }
-
 .search{
     width: 140px;
     height: 30px;
     background: #CDFEE1;
     border-radius: 5px;
     border: 4px solid #146C1D;
-    margin: 30px 20px 10px 60px;
+    margin: 20px 18px 0 60px;
     display: inline-block;
 }
 /*contenedor section de nuestra imagen principal*/
@@ -83,39 +74,34 @@ header{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .portada{
     width: 100%;
     background-size: cover;
 }
-
 .colorBar{
     width: 100%;
     height: 20px;
     padding: 0;
-}
+}*/
+
 /*barra de navegación horizontal - estilos generales*/
 .navigation{
     display: flex;
     justify-content: center;
 }
-
 nav ul{
     list-style: none;
     padding: 0;
 }
-
 nav li{
     line-height: 50px;
     display: flex;
     justify-content: space-evenly;
     position: relative;
 }
-
 nav li ul{
     position: absolute;
 }
-
 nav a{
     /*outline: 1px solid red;*/
     text-decoration: none;
@@ -126,7 +112,6 @@ nav a{
     transition: .4s;
     display: block;
 }
-
 nav a:hover {
     background: rgba(0,0,0,0.3);
 }
@@ -138,7 +123,6 @@ nav a:hover {
 nav > ul > li{
     float: left;
 }
-
 nav > ul{
     background: #CDFEE1;
     width: 800px;
@@ -158,22 +142,17 @@ nav li li{
     width: 200px;
     background: #CDFEE1;
 }
-
 nav li:hover > ul > li {
     max-height: 500px;
     overflow: visible;
 }
-
 nav > ul > li > ul{
     top: 120%;
 }
-
 nav ul ul{
     left: 100%;
     top: 0;
 }
-
-
 /*seccion de los cards*/
 .container{
     display: flex;
@@ -198,7 +177,6 @@ nav ul ul{
     border: 4px solid #27377A;
     justify-content: center;
 }
-
 /*valores del card*/
 .number {
     margin: 4px 6px;
@@ -207,7 +185,7 @@ nav ul ul{
     position: relative;
     color:#fff;
     font-size: 14px;
-  }
+}
 .imgPokemon {
     width: 136px;
     height: 136px;
@@ -249,14 +227,21 @@ nav ul ul{
     text-align: center;
 }*/
 footer{
+    display: flex;
     background: #27377A;
     height: 150px;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+}
+.textfooter{
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 40px;
     color: #fff;
     font-size: 14px;
-    align-self: center;
+    text-align: center;
 }
 
  
