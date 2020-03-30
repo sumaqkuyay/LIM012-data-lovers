@@ -1,15 +1,38 @@
 // import data from './data/atletas/atletas.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
+import { calStab, caldps, caleps } from './data.js';
 
 
 let output = '';
 
 data.pokemon.forEach((pokemon) => {
+
   let type = '';
   pokemon.type.forEach((tipo) => {
     type += `<div>${tipo}</div>`;
   });
+
+  let dataQMove='';
+  pokemon['quick-move'].forEach((ataque) => {
+    dataQMove += `"${ataque.name}"tipo:"${ataque.type}" base:"${ataque['base-damage']}"  `;
+    const found = pokemon.type.find(element => element === ataque.type);
+
+    const stabQM = calStab(found, ataque.type, ataque['base-damage']);
+    const dpsQM = caldps(ataque['base-damage'], stabQM, ataque['move-duration-seg']);
+    const epsQM = caleps(ataque.energy, ataque['move-duration-seg']);
+  });
+
+  let dataEAttack='';
+  pokemon['special-attack'].forEach((ataque) => {
+    dataEAttack += `"${ataque.name}"tipo:"${ataque.type}" base:"${ataque['base-damage']}"  `;
+    const found = pokemon.type.find(element => element === ataque.type);
+
+    const stabEA = calStab(found, ataque.type, ataque['base-damage']);
+    const dpsEA = caldps(ataque['base-damage'], stabEA, ataque['move-duration-seg']);
+    const epsEA = caleps(ataque.energy, ataque['move-duration-seg']);
+  });
+
   const dataPoke = `
   <div class="dataGeneral" >
     <div class="card">

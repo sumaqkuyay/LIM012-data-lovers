@@ -1,67 +1,4 @@
-/*seccion de los cards*/
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-}
-.dataGeneral{
-    margin: 28px;
-    display: flex;
-    text-align: center; 
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 110px;
-}
-.card{
-    width: 200px;
-    height: 280px;
-    display: flex;
-    background-image:url("Imagenes/fondoCard1.jpg");
-    border: 3px solid rgb(45, 43, 150);
-}
-
-/*valores del card*/
-.number {
-    width:20px;
-    height:20px;
-    position: relative;
-    color:#fff;
-    font-size: 11px;
-    font-family: sans-serif, "Nanum Gothic";
-  }
-.imgPokemon {
-    width: 135px;
-    height: 135px;
-    background: rgb(187, 241, 214);
-    border-radius: 8px;
-    border: 3px solid rgb(45, 43, 150);
-}
-.pokeName {
-    font-size: 19px;
-    text-align: center;
-    font-family: sans-serif, "Nanum Gothic";
-    color:#fff;
-    font-weight: bold;
-}
-.maxCp{
-    width:200px;
-    background-color: goldenrod;
-    cursor: default;
-    text-align: center;
-}
-.types{
-    color:#fff;
-    cursor: default;
-    background-color: #495743;
-    text-align: center; 
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/*declarando variables de color*/
 :root{
     --color: #27377A;
 }
@@ -74,98 +11,235 @@
 :root{
     --color: #146C1D;
 }
-
+/*todo el documento sin margen y sin padding*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*familia tipográfica para todo el docuemnto*/
 body{
     width: 100%;
     font-family: 'Lato', sans-serif;
 }
-
+/*cabecera de nuestra página*/
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
     position: fixed;
-    left: 0;
-    top: 0;
     width: 100%;
 }
-
+/*contenedor de muestras redes*/
 .redes{
     width: 140px;
     height: 100px;
-    flex-wrap: wrap;
     display: block;
 }
-
 .follow{
-    color: white;
-    font-size: 1em;
+    color:var(--color#27377A);
+    font-size: 14px;
     font-weight: bold;
-    margin: 6px 20px;
+    margin: 10px 0 4px 20px;
     display: inline-block;
 }
-
 .fb{
-    width: 50px;
-    margin: 4px 6px 4px 16px; 
-    display: inline-block;
+    width: 40px;
+    margin: 2px 3px 4px 16px; 
 }
-
 .ig{
-    width: 52px;
-    margin: 4px 2px;
-    display: inline-block;
+    width: 40px;
+    margin: 2px 2px 4px 1px;
 }
-
+/*contenedor de nuestra búsqueda*/
 .inputSearch{
-    width: 300px;
+    width: 240px;
     height: 100px;
     flex-wrap: nowrap;
     display: block;
 }
-
 .search{
-    width: 200px;
-    height: 40px;
-    color: #CDFEE1;
+    width: 140px;
+    height: 30px;
+    background: #CDFEE1;
     border-radius: 5px;
     border: 4px solid #146C1D;
-    margin: 30px 4px 10px 80px;
+    margin: 20px 18px 0 60px;
     display: inline-block;
 }
-
+/*contenedor section de nuestra imagen principal*/
+.presentation{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .portada{
-    left: 0;
-    top: 0;
-    bottom: 0;
     width: 100%;
     background-size: cover;
 }
-
-.transparent{
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.fondoNav{
+.colorBar{
     width: 100%;
-    height: 100px;
-    margin: 0;
+    height: 20px;
     padding: 0;
+}*/
+
+/*barra de navegación horizontal - estilos generales*/
+.navigation{
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav li{
+    line-height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+nav li ul{
+    position: absolute;
+}
+nav a{
+    /*outline: 1px solid red;*/
+    text-decoration: none;
+    color: #27377A;
+    padding: 0 4em;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .4s;
     display: block;
 }
-nav{
-    outline: 1px solid red;
+nav a:hover {
+    background: rgba(0,0,0,0.3);
 }
+/*nav ul ul{
+    display: none;
+}para ocultar las sublistas mientras trabajas*/
 
-ul{
-    outline: 1px solid blue;
+/*barra de navegación primer nivel*/
+nav > ul > li{
+    float: left;
 }
-li{
-    outline: 1px solid green;
+nav > ul{
+    background: #CDFEE1;
+    width: 800px;
+    height: 60px;
+    border-radius: 8px;
+    border: 5px solid #146C1D;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 8px 0;
+    display: table;
 }
-a{
-    outline: 1px solid yellow;
+/*barra de navegacion segundo nivel*/
+nav li li{
+    max-height: 0;
+    overflow: hidden;
+    transition: all .2s;
+    width: 200px;
+    background: #CDFEE1;
+}
+nav li:hover > ul > li {
+    max-height: 500px;
+    overflow: visible;
+}
+nav > ul > li > ul{
+    top: 120%;
+}
+nav ul ul{
+    left: 100%;
+    top: 0;
+}
+/*seccion de los cards*/
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.dataGeneral{
+    margin: 20px;
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.card{
+    width: 220px;
+    height: 280px;
+    display: flex;
+    background-image:url("Imagenes/fondoCard1.jpg");
+    background-size: cover;
+    border: 4px solid #27377A;
+    justify-content: center;
+}
+/*valores del card*/
+.number {
+    margin: 4px 6px;
+    width:30px;
+    height:20px;
+    position: relative;
+    color:#fff;
+    font-size: 14px;
+}
+.imgPokemon {
+    width: 136px;
+    height: 136px;
+    background: #CDFEE1;
+    border-radius: 8px;
+    border: 4px solid #27377A;
+}
+.pokeName {
+    font-size: 19px;
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.maxCp{
+    margin: 6px 3px;
+    width: 220px;
+    height: 25px;
+    background-color:#FFCB11;
+    cursor: default;
+    font-size: 18px;
+    color: #27377A;
+}
+.types{
+    width: 220px;
+    height: 30px;
+    /*color:#fff;*/
+    cursor: default;
+    /*background-color: #495743;
+    text-align: center;*/
+    align-items: stretch;
+}
+/*div{
+    background: #146C1D;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}*/
+footer{
+    display: flex;
+    background: #27377A;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.textfooter{
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 40px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
 }
