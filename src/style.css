@@ -141,7 +141,7 @@ nav li li{
     overflow: hidden;
     transition: all .2s;
     width: 130px;
-    background: #CDFEE1;
+    background: #27377A;
     justify-content: center;
     z-index: 2;
     color: #fff;
@@ -157,87 +157,14 @@ nav ul ul{
     left: 100%;
     top: 0;
 }
-/*colores de fondo de cada tipo de pokémon*/
-.acerotype{
-    background-color: rgb(10, 64, 114);
-    font-size: 16px;
-}
-.watertype{
-    background-color: rgb(13, 90, 190);
-    font-size: 16px;
-}
-.bugtype{
-    background-color: rgb(13, 155, 27);
-    font-size: 16px;
-}
-.dragontype{
-    background-color: red;
-    font-size: 16px;
-}
-.electrictype{
-    background-color: rgb(228, 228, 13);
-    font-size: 16px;
-    color: #27377A;
-}
-.ghosttype{
-    background-color: rgb(109, 103, 103);
-    font-size: 16px;
-}
-.firetype{
-    background-color: rgb(177, 107, 15);
-    font-size: 16px;
-}
-.fairytype{
-    background-color: plum;
-    font-size: 16px;
-}
-.icetype{
-    background-color: powderblue;
-    color: #27377A;
-    font-size: 16px;
-}
-.fightingtype{
-    background-color: rgb(23, 80, 117);
-    font-size: 16px;
-}
-.normaltype{
-    background-color: rgb(224, 129, 158);
-    color: #27377A;
-    font-size: 16px;
-}
-.grasstype{
-    background-color: #146C1D;
-    font-size: 16px;
-}
-.psychictype{
-    background-color: rgb(158, 158, 13);
-    font-size: 16px;
-}
-.rocktype{
-    background-color: rgba(136, 135, 135, 0.89);
-    font-size: 16px;
-}
-.darktype{
-    background-color: black;
-    font-size: 16px;
-}
-.groundtype{
-    background-color: rgb(73, 54, 48);
-    font-size: 16px;
-}
-.poisontype{
-    background-color: purple;
-    font-size: 16px;
-}
-.flyingtype{
-    background-color: salmon;
-    font-size: 16px;
-}
+/*submenu type y cp*/
+
 .orderbtn{
-    background-color: #27377A;
-    color: white;
     font-size: 16px;
     width: 160px;
+}
+.menutype{
+    font-size: 16px;
 }
 
 /*seccion de los cards*/
