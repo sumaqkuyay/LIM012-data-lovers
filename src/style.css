@@ -59,13 +59,22 @@ header{
     display: block;
 }
 .search{
-    width: 140px;
-    height: 30px;
+    width: 170px;
+    height: 28px;
     background: #CDFEE1;
     border-radius: 5px;
     border: 4px solid #146C1D;
-    margin: 20px 18px 0 60px;
+    margin: 20px 18px 0 30px;
     display: inline-block;
+    padding-left: 10px;
+}
+i{
+    color: #146C1D;
+    position: relative;
+    left: 190px;
+    bottom: 30px;
+    z-index: 3;
+    width: 10px;
 }
 /*contenedor section de nuestra imagen principal*/
 .presentation{
@@ -74,17 +83,19 @@ header{
     flex-wrap: wrap;
     justify-content: center;
 }
+.navPresent{
+    width: 100%;
+}
 .portada{
     width: 100%;
-    background-size: cover;
+    background-size: auto;
 }
-.colorBar{
-    width: 100%;
-    height: 20px;
-    padding: 0;
-}*/
 
 /*barra de navegación horizontal - estilos generales*/
+.menu{
+    position: relative;
+    bottom: 75px;
+}
 .navigation{
     display: flex;
     justify-content: center;
@@ -92,28 +103,18 @@ header{
 nav ul{
     list-style: none;
     padding: 0;
+    justify-content: space-evenly;
 }
 nav li{
     line-height: 50px;
     display: flex;
-    justify-content: space-evenly;
     position: relative;
 }
 nav li ul{
     position: absolute;
 }
-nav a{
-    /*outline: 1px solid red;*/
-    text-decoration: none;
-    color: #27377A;
-    padding: 0 4em;
-    font-size: 16px;
-    font-weight: bold;
-    transition: .4s;
-    display: block;
-}
-nav a:hover {
-    background: rgba(0,0,0,0.3);
+nav li:hover {
+    background: rgba(6, 75, 21, 0.521);
 }
 /*nav ul ul{
     display: none;
@@ -125,48 +126,59 @@ nav > ul > li{
 }
 nav > ul{
     background: #CDFEE1;
-    width: 800px;
-    height: 60px;
+    width: 720px;
+    height: 50px;
     border-radius: 8px;
     border: 5px solid #146C1D;
     font-size: 20px;
     font-weight: bold;
-    margin: 6px 8px 0;
-    display: table;
+    color: #27377A;
+    display: flex;
 }
 /*barra de navegacion segundo nivel*/
 nav li li{
     max-height: 0;
     overflow: hidden;
     transition: all .2s;
-    width: 200px;
-    background: #CDFEE1;
+    width: 130px;
+    background: #27377A;
+    justify-content: center;
+    z-index: 2;
+    color: #fff;
 }
 nav li:hover > ul > li {
     max-height: 500px;
     overflow: visible;
 }
 nav > ul > li > ul{
-    top: 120%;
+    top: 100%;
 }
 nav ul ul{
     left: 100%;
     top: 0;
 }
+/*submenu type y cp*/
+
+.orderbtn{
+    font-size: 16px;
+    width: 160px;
+}
+.menutype{
+    font-size: 16px;
+}
+
 /*seccion de los cards*/
 .container{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 30px;
 }
 .dataGeneral{
-    margin: 20px;
+    margin: 5px 20px 20px;
     display: flex;
     text-align: center; 
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 30px;
 }
 .card{
     width: 220px;
@@ -217,15 +229,10 @@ nav ul ul{
     cursor: default;
     /*background-color: #495743;
     text-align: center;*/
-    align-items: stretch;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
-/*div{
-    background: #146C1D;
-    color: #fff;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-}*/
 footer{
     display: flex;
     background: #27377A;
@@ -243,3 +250,5 @@ p{
     font-size: 14px;
     text-align: center;
 }
+
+ 
