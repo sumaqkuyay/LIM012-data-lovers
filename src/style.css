@@ -168,13 +168,20 @@ nav ul ul{
 }
 
 /*seccion de los cards*/
+main{
+    padding: 0;
+    margin: 0;
+}
+.containerCard{
+    display: flex;
+}
 .container{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .dataGeneral{
-    margin: 5px 20px 20px;
+    margin: 10px 20px 20px;
     display: flex;
     text-align: center; 
     justify-content: center;
@@ -184,7 +191,7 @@ nav ul ul{
     width: 220px;
     height: 280px;
     display: flex;
-    background-image:url("Imagenes/fondoCard1.jpg");
+    background-image: url("img/fondoCard.jpg");
     background-size: cover;
     border: 4px solid #27377A;
     justify-content: center;
@@ -250,5 +257,3 @@ p{
     font-size: 14px;
     text-align: center;
 }
-
- 
