@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> 
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icon.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
 
   <body>
     <header>
       <div class="redes">
-        <label class="follow">Siguenos en:</label>
+        <label class="follow">Follow us on:</label>
         <a target = "_blank" href="https://www.facebook.com/PokemonGO/">
         <img src="img/facebook.png" alt="" class="fb">
         </a>
@@ -19,7 +21,7 @@
         </a> 
       </div>
         <div class="inputSearch">
-          <input type="text" id="search" class="search" placeholder="Buscar pokémon">
+          <input type="text" id="search" class="search" placeholder="Search pokémon">
           <i class="fas fa-search" id="searchGlass"></i>
         </div>
     </header>
@@ -31,10 +33,13 @@
     </section>
       
       <div class="menu">
+        <div class="menuBar">
+          <a href="#" class="btn-menu"><span class="icon-menu"></span></a>
+        </div>
         <nav class="navigation">
           <ul>
-            <li id="inicio">Inicio</li>
-            <li id="type">Type
+            <li id="Start">Start</li>
+            <li id="type"><span class="icon-circle-down"></span>Type
               <ul>
                 <li class="menutype" value="">Steel</li>
                 <li class="menutype" value="">Water</li>
@@ -56,7 +61,7 @@
                 <li class="menutype" value="">Flying</li>
               </ul>
             </li>
-            <li id="maxcp">Max-CP
+            <li id="maxcp"><span class="icon-circle-down"></span>Max-CP
               <ul>
                 <li id="mayor" class="orderbtn">From high to low</li>
                 <li id="menor" class="orderbtn">From low to hight</li> 
@@ -66,11 +71,9 @@
           </ul>
         </nav>
     </div>
-
     <main class="main">
       <section class="containerCard">
         <div class="container" id="dataGHTML">
-
         </div>
       </section>
     </main>
@@ -91,4 +94,4 @@
     <script src="main.js" type="module"></script>
     <script src="https://kit.fontawesome.com/9fd06027d3.js" crossorigin="anonymous"></script>
   </body>
-</html>chauu
+</html>

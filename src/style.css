@@ -60,11 +60,11 @@ header{
 }
 .search{
     width: 170px;
-    height: 28px;
+    height: 35px;
     background: #CDFEE1;
     border-radius: 5px;
     border: 4px solid #146C1D;
-    margin: 20px 18px 0 30px;
+    margin: 20px 12px 0 30px;
     display: inline-block;
     padding-left: 10px;
 }
@@ -88,32 +88,42 @@ i{
 }
 .portada{
     width: 100%;
-    background-size: auto;
+    height: auto;
+    background-size: cover;
 }
 
 /*barra de navegación horizontal - estilos generales*/
 .menu{
     position: relative;
-    bottom: 75px;
+    bottom: 80px;
+    width: 100%;
 }
-.navigation{
+.menu .navigation{
+    width: 60%;
+    margin: 10px auto;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
+    background: #CDFEE1;
+    border-radius: 8px;
+    border: 5px solid #146C1D;
 }
-nav ul{
+.menuBar{
+    display: none;
+}
+.navigation ul{
     list-style: none;
-    padding: 0;
     justify-content: space-evenly;
 }
-nav li{
+.navigation li{
     line-height: 50px;
     display: flex;
     position: relative;
 }
-nav li ul{
+.navigation li ul{
     position: absolute;
 }
-nav li:hover {
+.navigation ul li:hover {
     background: rgba(6, 75, 21, 0.521);
 }
 /*nav ul ul{
@@ -121,24 +131,27 @@ nav li:hover {
 }para ocultar las sublistas mientras trabajas*/
 
 /*barra de navegación primer nivel*/
-nav > ul > li{
+.menu .navigation > ul > li{
     float: left;
 }
-nav > ul{
-    background: #CDFEE1;
-    width: 720px;
+.navigation > ul{
+    overflow: hidden;
+    width: 680px;
     height: 50px;
-    border-radius: 8px;
-    border: 5px solid #146C1D;
     font-size: 20px;
     font-weight: bold;
     color: #27377A;
     display: flex;
 }
+span{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
 /*barra de navegacion segundo nivel*/
-nav li li{
+.navigation li li{
     max-height: 0;
-    overflow: hidden;
     transition: all .2s;
     width: 130px;
     background: #27377A;
@@ -146,22 +159,20 @@ nav li li{
     z-index: 2;
     color: #fff;
 }
-nav li:hover > ul > li {
+.navigation li:hover > ul > li {
     max-height: 500px;
     overflow: visible;
 }
-nav > ul > li > ul{
+.navigation > ul > li > ul{
     top: 100%;
 }
-nav ul ul{
-    left: 100%;
+.navigation ul ul{
     top: 0;
 }
 /*submenu type y cp*/
 
 .orderbtn{
     font-size: 16px;
-    width: 160px;
 }
 .menutype{
     font-size: 16px;
@@ -171,6 +182,8 @@ nav ul ul{
 main{
     padding: 0;
     margin: 0;
+    position: relative;
+    bottom: 50px;
 }
 .containerCard{
     display: flex;
@@ -181,7 +194,7 @@ main{
     flex-wrap: wrap;
 }
 .dataGeneral{
-    margin: 10px 20px 20px;
+    margin: 10px 15px 30px 15px;
     display: flex;
     text-align: center; 
     justify-content: center;
@@ -232,14 +245,12 @@ main{
 .types{
     width: 220px;
     height: 30px;
-    /*color:#fff;*/
     cursor: default;
-    /*background-color: #495743;
-    text-align: center;*/
     align-items: center;
     display: flex;
     justify-content: center;
 }
+/*estilo pie de páagina*/
 footer{
     display: flex;
     background: #27377A;
