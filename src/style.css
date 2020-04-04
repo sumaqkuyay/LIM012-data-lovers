@@ -268,3 +268,33 @@ p{
     font-size: 14px;
     text-align: center;
 }
+
+@media screen and (max-width: 800px){
+    .menu .navigation{
+        width: 70%;
+        height: 100;
+        margin: 0;
+        position: fixed;
+        left: -100%;
+    }
+    .menu .navigation ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid white;
+    }
+    .menuBar{
+        display: block;
+        width: 100%;
+        background: #27377A;
+    }
+    .menuBar .icon-menu{
+        display: block;
+        padding: 20px;
+        background: #146C1D;
+        color: #fff;
+        box-sizing: border-box;
+    }
+    .menuBar span{
+        float: right;
+    }
+}
