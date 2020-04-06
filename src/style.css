@@ -246,9 +246,119 @@ main{
     width: 220px;
     height: 30px;
     cursor: default;
+    color:#fff;
     align-items: center;
     display: flex;
     justify-content: center;
+   
+}
+.grass{
+    background-color: #78c850;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.poison{
+    background-color: #a040a0;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.fire{
+    background-color: #f08030;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.flying{
+    background-color: #a890f0;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.water{
+    background-color: #6890f0;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.bug{
+    background-color: #a8b820;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.normal{
+    background-color: #a8a878;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.electric{
+    background-color: #f8d030;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.ground{
+    background-color: #e0c068;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.fighting{
+    background-color: #c02038;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.psychic{
+    background-color: #f85888;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.rock{
+    background-color: #b8a038;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.ice{
+    background-color: #98d8d8;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.dragon{
+    background-color: #7038f8;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.fairy{
+    background-color: #ee99ac;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.dark{
+    background-color: #705848;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.steel{
+    background-color: #b8b8d0;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.ghost{
+    background-color: #705898;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
 }
 /*estilo pie de páagina*/
 footer{
