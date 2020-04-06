@@ -32,7 +32,6 @@ const toShow = ((pokeList) => {
       const dpsEA = caldps(ataque['base-damage'], stabEA, ataque['move-duration-seg']);
       const epsEA = caleps(ataque.energy, ataque['move-duration-seg']);
       dataEAttack += `"${ataque.name}"tipo:"${ataque.type}" base:"${ataque['base-damage']}" ${stabEA} ${dpsEA} ${epsEA} `;
-  
     });
 
     const dataPoke = `
@@ -74,3 +73,36 @@ listMaxCp.forEach((item) => {
     toShow(sortMaxCp(pokemonListing, item.innerHTML));
   });
 });
+
+const crearModalTexto = (msj)=>{
+  const f = document.createElement('div');
+  const m = document.createElement('div');
+  const t = document.createTextNode(msj);
+  f.appendChild(m);
+  m.appendChild(t);
+  f.className = 'contenedor';
+  m.className = 'modal';
+
+  const cerrar = document.createElement('div');
+  const x = document.createTextNode('X');
+  cerrar.appendChild(x);
+  cerrar.className = 'cerrar' ;
+  cerrar.addEventListener('click', () => {
+    f.style.visibility = 'hidden';
+  });
+  m.appendChild(cerrar);
+  document.body.appendChild(f);
+  return f;
+};
+
+const mostrarModal = (obj) => {
+  obj.style.visibility = 'visibility';
+};
+
+
+const btnModal=document.getElementById('btn');
+btnModal.addEventListener('click', () => {
+  const mimodal = crearModalTexto('Mi modal de ejemplo y mi texto');
+  mostrarModal(mimodal);
+});
+
