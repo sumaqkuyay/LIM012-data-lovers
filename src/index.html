@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icon.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
 
   <body>
     <header>
       <div class="redes">
-        <label class="follow">Siguenos en:</label>
+        <label class="follow">Follow us on:</label>
         <a target = "_blank" href="https://www.facebook.com/PokemonGO/">
         <img src="img/facebook.png" alt="" class="fb">
         </a>
@@ -19,7 +21,7 @@
         </a> 
       </div>
         <div class="inputSearch">
-          <input type="text" id="search" class="search" placeholder="Buscar pokémon">
+          <input type="text" id="search" class="search" placeholder="Search pokémon">
           <i class="fas fa-search" id="searchGlass"></i>
         </div>
     </header>
@@ -31,29 +33,32 @@
     </section>
       
       <div class="menu">
+        <div class="menuBar">
+          <a href="#" class="btn-menu"><span class="icon-menu"></span></a>
+        </div>
         <nav class="navigation">
           <ul>
-            <li id="inicio">Inicio</li>
-            <li id="type">Type
+            <li id="Start">Start</li>
+            <li id="typePoke"><span class="icon-circle-down"></span>Type
               <ul>
-                <li class="menutype" value="">Steel</li>
-                <li class="menutype" value="">Water</li>
-                <li class="menutype" value="">Bug</li>
-                <li class="menutype" value="">Dragon</li>
-                <li class="menutype" value="">Electric</li>
-                <li class="menutype" value="">Ghost</li>
-                <li class="menutype" value="">Fire</li>
-                <li class="menutype" value="">Fairy</li>
-                <li class="menutype" value="">Ice</li>
-                <li class="menutype" value="">Fighting</li>
-                <li class="menutype" value="">Normal</li>
-                <li class="menutype" value="">Grass</li>
-                <li class="menutype" value="">Psychic</li>
-                <li class="menutype" value="">Rock</li>
-                <li class="menutype" value="">Dark</li>
-                <li class="menutype" value="">Ground</li>
-                <li class="menutype" value="">Poison</li>
-                <li class="menutype" value="">Flying</li>
+                <li class="menutype" >steel</li>
+                <li class="menutype" >water</li>
+                <li class="menutype" >bug</li>
+                <li class="menutype" >dragon</li>
+                <li class="menutype" >electric</li>
+                <li class="menutype" >ghost</li>
+                <li class="menutype" >fire</li>
+                <li class="menutype" >fairy</li>
+                <li class="menutype" >ice</li>
+                <li class="menutype" >fighting</li>
+                <li class="menutype" >normal</li>
+                <li class="menutype" >grass</li>
+                <li class="menutype" >psychic</li>
+                <li class="menutype" >rock</li>
+                <li class="menutype" >dark</li>
+                <li class="menutype" >ground</li>
+                <li class="menutype" >poison</li>
+                <li class="menutype" >flying</li>
               </ul>
             </li>
             <li id="maxcp">Max-CP
@@ -70,7 +75,6 @@
     <main class="main">
       <section class="containerCard">
         <div class="container" id="dataGHTML">
-
         </div>
       </section>
     </main>
@@ -91,4 +95,4 @@
     <script src="main.js" type="module"></script>
     <script src="https://kit.fontawesome.com/9fd06027d3.js" crossorigin="anonymous"></script>
   </body>
-</html>chauu
+</html>
