@@ -1,5 +1,5 @@
 /*declarando variables de color*/
-:root{
+/*:root{
     --color: #27377A;
 }
 :root{
@@ -10,7 +10,7 @@
 }
 :root{
     --color: #146C1D;
-}
+}*/
 /*todo el documento sin margen y sin padding*/
 * {
     margin: 0;
