@@ -22,3 +22,18 @@ export const caleps = (energy, timeMove) => {
   const eps = energy / timeMove;
   return eps;
 };
+
+export const sortByType = (array, type) => {
+  const pokeByType = array.filter(item => item.type.includes(type));
+  return pokeByType;
+};
+
+export const sortMaxCp = ((array, condition) => {
+  let result;
+  if (condition === 'From high to low') {
+    result = array.sort((a, b) => (b.stats['max-cp'] - a.stats['max-cp']));
+  } else {
+    result = array.sort((a, b) => (a.stats['max-cp'] - b.stats['max-cp']));
+  }
+  return result;
+});

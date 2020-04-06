@@ -1,5 +1,5 @@
-/*declarando variables de color*/
-:root{
+/*declarando var de color */
+/*:root{
     --color: #27377A;
 }
 :root{
@@ -10,7 +10,7 @@
 }
 :root{
     --color: #146C1D;
-}
+}*/
 /*todo el documento sin margen y sin padding*/
 * {
     margin: 0;
@@ -20,6 +20,7 @@
 body{
     width: 100%;
     font-family: 'Lato', sans-serif;
+    background: rgba(235, 233, 253, 0.959);
 }
 /*cabecera de nuestra página*/
 header{
@@ -157,7 +158,7 @@ span{
     background: #27377A;
     justify-content: center;
     z-index: 2;
-    color: #fff;
+    color:  rgba(235, 233, 253, 0.959);;
 }
 .navigation li:hover > ul > li {
     max-height: 500px;
@@ -208,6 +209,7 @@ main{
     background-size: cover;
     border: 4px solid #27377A;
     justify-content: center;
+
 }
 /*valores del card*/
 .number {
@@ -246,10 +248,154 @@ main{
     width: 220px;
     height: 30px;
     cursor: default;
+    color:#fff;
     align-items: center;
     display: flex;
     justify-content: center;
+   
 }
+.grass{
+    background-color: #78c850;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.poison{
+    background-color: #a040a0;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.fire{
+    background-color: #f08030;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.flying{
+    background-color: #a890f0;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.water{
+    background-color: #6890f0;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.bug{
+    background-color: #a8b820;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.normal{
+    background-color: #a8a878;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.electric{
+    background-color: #f8d030;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.ground{
+    background-color: #e0c068;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.fighting{
+    background-color: #c02038;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.psychic{
+    background-color: #f85888;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.rock{
+    background-color: #b8a038;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.ice{
+    background-color: #98d8d8;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.dragon{
+    background-color: #7038f8;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.fairy{
+    background-color: #ee99ac;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.dark{
+    background-color: #705848;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.steel{
+    background-color: #b8b8d0;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+.ghost{
+    background-color: #705898;
+    width: 57px;
+    height: 23px;
+    border-radius: 3px;
+}
+/*practicando Modal*/
+.contenedor{
+    position:fixed;
+    width: 50%;
+    height: 300px;
+    top: 290px;
+    left: 245px;
+    background-color: rgba(0,0,0,0.5);
+    visibility: visible;
+  
+  }
+  .modal{
+    background-color: white;
+    border-radius: 4px;
+    padding: 25px;
+    margin: 10% auto;
+    width: 50%;
+    height: auto;
+    text-align: center;
+  }
+  .cerrar{
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    background-color: rgba(255,0,0,0.5);
+    padding: 7px;
+    float: right;
+    font-family: "Calibri";
+    font-weight: bold;
+  
+  }
+  .cerrar:hover{
+     background-color: rgba(255,0,0,1);
+  }
 /*estilo pie de páagina*/
 footer{
     display: flex;
