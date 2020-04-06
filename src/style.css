@@ -20,6 +20,7 @@
 body{
     width: 100%;
     font-family: 'Lato', sans-serif;
+    background: rgba(235, 233, 253, 0.959);
 }
 /*cabecera de nuestra página*/
 header{
@@ -157,7 +158,7 @@ span{
     background: #27377A;
     justify-content: center;
     z-index: 2;
-    color: #fff;
+    color:  rgba(235, 233, 253, 0.959);;
 }
 .navigation li:hover > ul > li {
     max-height: 500px;
