@@ -104,9 +104,3 @@ btnModal.addEventListener('click', () => {
   const mimodal = crearModalTexto('Mi modal de ejemplo y mi texto');
   mostrarModal(mimodal);
 });
-
-/*const desplegar = document.querySelectorAll('.icon-circle-down');
-icon-circle-down.addEventListener('click', () => {
-  ul>li.style.visibility = 'visibility';
-
-});*/

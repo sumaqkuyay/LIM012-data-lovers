@@ -93,7 +93,6 @@ i{
     height: auto;
     background-size: cover;
 }
-
 /*barra de navegación horizontal - estilos generales*/
 .menu{
     position: relative;
@@ -111,7 +110,24 @@ i{
     border: 5px solid #146C1D;
 }
 .menuBar{
-    display: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background: #27377A;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    z-index: 10;
+}
+.btn-menu{
+    text-decoration: none;
+    width: 80%;
+    height: 80%;
+}
+.icon-menu{
+    color: #fff;
+    padding: 3px;  
 }
 .navigation ul{
     list-style: none;
@@ -137,7 +153,7 @@ i{
     float: left;
 }
 .navigation > ul{
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 680px;
     height: 50px;
     font-size: 20px;
@@ -150,7 +166,6 @@ span{
     align-items: center;
     margin-right: 10px;
 }
-
 /*barra de navegacion segundo nivel*/
 .navigation li li{
     max-height: 0;
@@ -172,14 +187,12 @@ span{
     top: 0;
 }
 /*submenu type y cp*/
-
 .orderbtn{
     font-size: 16px;
 }
 .menutype{
     font-size: 16px;
 }
-
 /*seccion de los cards*/
 main{
     padding: 0;
@@ -210,7 +223,6 @@ main{
     background-size: cover;
     border: 4px solid #27377A;
     justify-content: center;
-
 }
 /*valores del card*/
 .number {
@@ -252,11 +264,10 @@ main{
     color:#fff;
     align-items: center;
     display: flex;
-    justify-content: center;
-   
+    justify-content: center;  
 }
 .grass{
-    background-color: #78c850;
+    background-color: #146C1D;
     width: 57px;
     height: 23px;
     border-radius: 3px;
@@ -372,7 +383,7 @@ main{
     left: 245px;
     background-color: rgba(0,0,0,0.5);
     visibility: visible;
-  
+    z-index: 20;
   }
   .modal{
     background-color: white;
@@ -392,12 +403,10 @@ main{
     float: right;
     font-family: "Calibri";
     font-weight: bold;
-  
   }
   .cerrar:hover{
      background-color: rgba(255,0,0,1);
   }
-
 /*estilo pie de páagina*/
 footer{
     display: flex;
@@ -416,104 +425,4 @@ p{
     font-size: 14px;
     text-align: center;
 }
-/*responsive con media query*/
-@media screen and (max-width:1024px){
-    header {
-        max-width: 100%;
-    }
-
-    .fb .ig{
-        width: 20%;
-    }
-    .inputSearch{
-        width: 22%;
-        flex-wrap: wrap;
-        display: inline-block;
-    }
-    .search{
-        width: 70%;
-        margin: 20px 0 0 20px;
-    }
-    i{
-        width: 20%;
-        position: relative;
-        left: 70%;
-    }
-    .presentation{
-        max-width: 100%;
-    }
-    .portada{
-        max-width: 100%;
-    }
-    .menu{
-        bottom: 15%;
-    }
-    .menu .navigation{
-        width: 70%;
-    }
-    main{
-        box-sizing: border-box;
-        bottom: 20%;
-    }
-    .container{
-        max-width: 100%;
-    }
-    .dataGeneral{
-        width: 30%;
-        height: auto;
-    }
-    p{
-        font-size: 0.7em;
-    }
-}
-@media screen and (max-width:768px){
-    header {
-        max-width: 100%;
-    }
-    .follow{
-        display: none;
-    }
-    .fb .ig{
-        width: 10%;
-        margin: 10px;
-    }
-    .inputSearch{
-        width: 25%;
-        flex-wrap: wrap;
-        display: inline-block;
-    }
-    .search{
-        width: 70%;
-        margin: 10px 0 0 10px;
-    }
-    i{
-        width: 20%;
-        position: relative;
-        left: 70%;
-    }
-    .presentation{
-        max-width: 100%;
-    }
-    .portada{
-        max-width: 100%;
-    }
-    .menu{
-        bottom: 15%;
-    }
-    .menu .navigation{
-        width: 90%;
-    }
-    main{
-        box-sizing: border-box;
-        bottom: 40%;
-    }
-    .container{
-        max-width: 100%;
-    }
-    .dataGeneral{
-        width: 30%;
-        height: auto;
-    }   
-}
-@media screen and (max-width:480px){
  

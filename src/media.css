@@ -1,0 +1,101 @@
+/*responsive con media query*/
+@media screen and (max-width:1024px){
+    header {
+        max-width: 100%;
+    }
+    .fb .ig{
+        width: 20%;
+    }
+    .inputSearch{
+        width: 22%;
+        flex-wrap: wrap;
+        display: inline-block;
+    }
+    .search{
+        width: 70%;
+        margin: 20px 0 0 20px;
+    }
+    i{
+        width: 20%;
+        position: relative;
+        left: 70%;
+    }
+    .presentation{
+        max-width: 100%;
+    }
+    .portada{
+        max-width: 100%;
+    }
+    .menu{
+        bottom: 15%;
+    }
+    .menu .navigation{
+        width: 70%;
+    }
+    main{
+        box-sizing: border-box;
+        bottom: 20%;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .dataGeneral{
+        width: 30%;
+        height: auto;
+    }
+    p{
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width:768px){
+    header {
+        max-width: 100%;
+    }
+    .follow{
+        display: none;
+    }
+    .fb .ig{
+        width: 10%;
+        margin: 10px;
+    }
+    .inputSearch{
+        width: 25%;
+        flex-wrap: wrap;
+        display: inline-block;
+    }
+    .search{
+        width: 70%;
+        margin: 10px 0 0 10px;
+    }
+    i{
+        width: 20%;
+        position: relative;
+        left: 70%;
+    }
+    .presentation{
+        max-width: 100%;
+    }
+    .portada{
+        max-width: 100%;
+    }
+    .menu{
+        bottom: 15%;
+    }
+    .menu .navigation{
+        width: 80%;
+    }
+    main{
+        box-sizing: border-box;
+        bottom: 40%;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .dataGeneral{
+        width: 30%;
+        height: auto;
+    }   
+}
+@media screen and (max-width:480px){
+
+}
