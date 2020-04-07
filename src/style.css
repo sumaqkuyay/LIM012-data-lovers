@@ -1,5 +1,5 @@
 /*declarando var de color */
-/*:root{
+:root{
     --color: #27377A;
 }
 :root{
@@ -10,7 +10,7 @@
 }
 :root{
     --color: #146C1D;
-}*/
+}
 /*todo el documento sin margen y sin padding*/
 * {
     margin: 0;
@@ -30,6 +30,7 @@ header{
     align-content: center;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 /*contenedor de muestras redes*/
 .redes{
@@ -136,7 +137,7 @@ i{
     float: left;
 }
 .navigation > ul{
-    /*overflow: hidden;*/
+    overflow: hidden;
     width: 680px;
     height: 50px;
     font-size: 20px;
@@ -160,7 +161,7 @@ span{
     z-index: 2;
     color:  rgba(235, 233, 253, 0.959);;
 }
-.navigation li:hover > ul > li {
+.navigation li:hover > ul > li{
     max-height: 500px;
     overflow: visible;
 }
@@ -396,6 +397,7 @@ main{
   .cerrar:hover{
      background-color: rgba(255,0,0,1);
   }
+
 /*estilo pie de páagina*/
 footer{
     display: flex;
@@ -414,3 +416,104 @@ p{
     font-size: 14px;
     text-align: center;
 }
+/*responsive con media query*/
+@media screen and (max-width:1024px){
+    header {
+        max-width: 100%;
+    }
+
+    .fb .ig{
+        width: 20%;
+    }
+    .inputSearch{
+        width: 22%;
+        flex-wrap: wrap;
+        display: inline-block;
+    }
+    .search{
+        width: 70%;
+        margin: 20px 0 0 20px;
+    }
+    i{
+        width: 20%;
+        position: relative;
+        left: 70%;
+    }
+    .presentation{
+        max-width: 100%;
+    }
+    .portada{
+        max-width: 100%;
+    }
+    .menu{
+        bottom: 15%;
+    }
+    .menu .navigation{
+        width: 70%;
+    }
+    main{
+        box-sizing: border-box;
+        bottom: 20%;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .dataGeneral{
+        width: 30%;
+        height: auto;
+    }
+    p{
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width:768px){
+    header {
+        max-width: 100%;
+    }
+    .follow{
+        display: none;
+    }
+    .fb .ig{
+        width: 10%;
+        margin: 10px;
+    }
+    .inputSearch{
+        width: 25%;
+        flex-wrap: wrap;
+        display: inline-block;
+    }
+    .search{
+        width: 70%;
+        margin: 10px 0 0 10px;
+    }
+    i{
+        width: 20%;
+        position: relative;
+        left: 70%;
+    }
+    .presentation{
+        max-width: 100%;
+    }
+    .portada{
+        max-width: 100%;
+    }
+    .menu{
+        bottom: 15%;
+    }
+    .menu .navigation{
+        width: 90%;
+    }
+    main{
+        box-sizing: border-box;
+        bottom: 40%;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .dataGeneral{
+        width: 30%;
+        height: auto;
+    }   
+}
+@media screen and (max-width:480px){
+ 
