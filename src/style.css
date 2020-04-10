@@ -109,26 +109,27 @@ i{
     border-radius: 8px;
     border: 5px solid #146C1D;
 }
+.btn-menu{
+    display: none;
+}
 .menuBar{
-    width: 30px;
-    height: 30px;
-    display: flex;
+    width: 40px;
     background: #27377A;
     position: relative;
-    justify-content: center;
-    align-items: center;
     float: left;
-    z-index: 10;
 }
-.btn-menu{
-    text-decoration: none;
-    width: 80%;
-    height: 80%;
-}
-.icon-menu{
+.menuBar label{
+    display: none;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
     color: #fff;
-    padding: 3px;  
 }
+.menuBar label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
 .navigation ul{
     list-style: none;
     justify-content: space-evenly;
@@ -151,6 +152,7 @@ i{
 /*barra de navegación primer nivel*/
 .menu .navigation > ul > li{
     float: left;
+    position: relative;
 }
 .navigation > ul{
     /*overflow: hidden;*/
@@ -161,7 +163,7 @@ i{
     color: #27377A;
     display: flex;
 }
-span{
+ .navigation > ul > li > span{
     display: flex;
     align-items: center;
     margin-right: 10px;
@@ -173,7 +175,7 @@ span{
     width: 130px;
     background: #27377A;
     justify-content: center;
-    z-index: 2;
+    z-index: 10;
     color:  rgba(235, 233, 253, 0.959);;
 }
 .navigation li:hover > ul > li{
