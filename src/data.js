@@ -1,26 +1,18 @@
-// estas funciones son de ejemplo
-
-export const example = () => 'example';
-
-export const anotherExample = () => 'OMG';
-
-
 export const calStab = (found, attackQM, baseDamage) => {
   if (found === attackQM) {
     return baseDamage * 1.2;
   }
-  return baseDamage;
+  return baseDamage * 1.0;
 };
 
 export const caldps = (baseDamage, stabQM, timeMove) => {
-
-  const dps = (baseDamage * stabQM) / timeMove;
-  return dps;
+  const dps = ((baseDamage * stabQM) / timeMove).toFixed();
+  return dps * 1.0;
 };
 
 export const caleps = (energy, timeMove) => {
-  const eps = energy / timeMove;
-  return eps;
+  const eps = (energy / timeMove).toFixed();
+  return eps * 1.0;
 };
 
 export const sortByType = (array, type) => {
@@ -37,3 +29,8 @@ export const sortMaxCp = ((array, condition) => {
   }
   return result;
 });
+
+/* export const caleps = (attackType) => {
+  const eps = attackType.map(item => item.energy / item['move-duration-seg']);
+  return eps;
+}; */

@@ -1,7 +1,9 @@
 // import data from './data/atletas/atletas.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
-import { calStab, caldps, caleps, sortByType, sortMaxCp } from './data.js';
+import {
+  calStab, caldps, caleps, sortByType, sortMaxCp,
+} from './data.js';
 
 const pokemonListing = data.pokemon;
 
@@ -14,24 +16,27 @@ const toShow = ((pokeList) => {
       type += `<div class="${tipo}">${tipo}</div>`;
     });
 
-    let dataQMove='';
+    let dataQMove = '';
     pokemon['quick-move'].forEach((ataque) => {
-      dataQMove += `"${ataque.name}"tipo:"${ataque.type}" base:"${ataque['base-damage']}"  `;
       const found = pokemon.type.find(element => element === ataque.type);
 
       const stabQM = calStab(found, ataque.type, ataque['base-damage']);
       const dpsQM = caldps(ataque['base-damage'], stabQM, ataque['move-duration-seg']);
       const epsQM = caleps(ataque.energy, ataque['move-duration-seg']);
+      // const epsQM = caleps(pokemon['quick-move']);
+      dataQMove += `</br>"Nombre ataque:"${ataque.name} </br>"STAB:"${stabQM} </br> "DPS:"${dpsQM}</br> "EPS:" ${epsQM} `;
     });
 
-    let dataEAttack='';
+    let dataEAttack = '';
     pokemon['special-attack'].forEach((ataque) => {
       const found = pokemon.type.find(element => element === ataque.type);
 
       const stabEA = calStab(found, ataque.type, ataque['base-damage']);
       const dpsEA = caldps(ataque['base-damage'], stabEA, ataque['move-duration-seg']);
+      // console.log(typeof (dspsEA));
       const epsEA = caleps(ataque.energy, ataque['move-duration-seg']);
-      dataEAttack += `"${ataque.name}"tipo:"${ataque.type}" base:"${ataque['base-damage']}" ${stabEA} ${dpsEA} ${epsEA} `;
+      // const epsEA = caleps(pokemon['special-attack']);
+      dataEAttack += `</br>"Nombre ataque:"${ataque.name} </br>"STAB:"${stabEA} </br> "DPS:"${dpsEA}</br> "EPS:" ${epsEA} `;
     });
 
     const dataPoke = `
@@ -46,8 +51,9 @@ const toShow = ((pokeList) => {
                   <div class="types"> ${type}</div>
               </div>
           </div>
-          <div class="backSide" hidden>
+          <div class="backSide" >
          ${dataEAttack}
+         ${dataQMove}
           </div>
       </div>
     </div>
@@ -74,7 +80,7 @@ listMaxCp.forEach((item) => {
   });
 });
 
-const crearModalTexto = (msj)=>{
+const crearModalTexto = (msj) => {
   const f = document.createElement('div');
   const m = document.createElement('div');
   const t = document.createTextNode(msj);
@@ -86,7 +92,7 @@ const crearModalTexto = (msj)=>{
   const cerrar = document.createElement('div');
   const x = document.createTextNode('X');
   cerrar.appendChild(x);
-  cerrar.className = 'cerrar' ;
+  cerrar.className = 'cerrar';
   cerrar.addEventListener('click', () => {
     f.style.visibility = 'hidden';
   });
@@ -96,10 +102,11 @@ const crearModalTexto = (msj)=>{
 };
 
 const mostrarModal = (obj) => {
+  // eslint-disable-next-line no-param-reassign
   obj.style.visibility = 'visibility';
 };
 
-const btnModal=document.getElementById('btn');
+const btnModal = document.getElementById('btn');
 btnModal.addEventListener('click', () => {
   const mimodal = crearModalTexto('Mi modal de ejemplo y mi texto');
   mostrarModal(mimodal);
