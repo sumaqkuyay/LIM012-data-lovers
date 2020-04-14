@@ -109,7 +109,7 @@ Prototipos de la primera historia:
 - [X] Diseñar la aplicación pensando y entendiendo al usuario.
 - [X] Crear prototipos para obtener _feedback_ e iterar.
 - [X] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
-- [ ] Planear y ejecutar _tests_ de usabilidad.
+- [X] Planear y ejecutar _tests_ de usabilidad.
 
 ### HTML y CSS
 
@@ -120,23 +120,23 @@ Prototipos de la primera historia:
 
 ### DOM
 
-- [ ] Entender y reconocer los selectores del DOM (`querySelector` | `querySelectorAll`).
+- [X] Entender y reconocer los selectores del DOM (`querySelector` | `querySelectorAll`).
 - [X] Manejar eventos del DOM. (`addEventListener`)
 - [X] Manipular dinámicamente el DOM. (`createElement`, `appendchild`, `innerHTML`, `value`)
 
 ### Javascript
 
-- [ ] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
+- [X] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
 - [X] Manipular objects (key | value).
-- [ ] Entender el uso de condicionales (`if-else` | `switch`).
+- [X] Entender el uso de condicionales (`if-else` | `switch`).
 - [X] Entender el uso de bucles (`for` | `forEach`).
 - [ ] Entender la diferencia entre expression y statements.
-- [ ] Utilizar funciones (`parámetros` | `argumentos` | `valor de retorno`).
-- [ ] Entender la diferencia entre tipos de datos atómicos y estructurados.
-- [ ] Utilizar ES Modules (`import` | `export`).
+- [X] Utilizar funciones (`parámetros` | `argumentos` | `valor de retorno`).
+- [X] Entender la diferencia entre tipos de datos atómicos y estructurados.
+- [X] Utilizar ES Modules (`import` | `export`).
 
 ### Pruebas Unitarias (_testing_)
-- [ ] Testear funciones (funciones puras).
+- [X] Testear funciones (funciones puras).
 
 ### Git y GitHub
 - [X] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
@@ -152,20 +152,18 @@ Prototipos de la primera historia:
 
 * [X] Usa VanillaJS.
 * [X] No hace uso de `this`.
-* [ ] Pasa linter (`npm run pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+* [X] Pasa linter (`npm run pretest`)
+* [X] Pasa tests (`npm test`)
+* [X] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
   lines y branches.
 * [X] Incluye _Definición del producto_ clara e informativa en `README.md`.
 * [X] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+* [X] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
   `README.md`.
 * [X] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
   en `README.md`.
 * [X] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
+* [X] UI: Muestra lista y/o tabla con datos y/o indicadores.
+* [X] UI: Permite ordenar data por uno o más campos (asc y desc).
+* [X] UI: Permite filtrar data en base a una condición.
 * [ ] UI: Es _responsive_.
