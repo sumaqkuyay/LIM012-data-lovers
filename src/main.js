@@ -6,7 +6,8 @@ import {
 } from './data.js';
 
 const pokemonListing = data.pokemon;
-
+const listType = document.querySelectorAll('#typePoke > ul > .menutype');
+const listMaxCp = document.querySelectorAll('#maxcp > ul > .orderbtn');
 
 const toShow = ((pokeList) => {
   let output = '';
@@ -51,7 +52,7 @@ const toShow = ((pokeList) => {
                   <div class="types"> ${type}</div>
               </div>
           </div>
-          <div class="backSide" >
+          <div class="backSide" hidden >
          ${dataEAttack}
          ${dataQMove}
           </div>
@@ -63,17 +64,13 @@ const toShow = ((pokeList) => {
   document.getElementById('dataGHTML').innerHTML = output;
 });
 
-toShow(pokemonListing);
-
-const listType = document.querySelectorAll('#typePoke > ul > .menutype');
-
 listType.forEach((item) => {
   item.addEventListener('click', () => {
     toShow(sortByType(pokemonListing, item.innerHTML));
   });
 });
 
-const listMaxCp = document.querySelectorAll('#maxcp > ul > .orderbtn');
+
 listMaxCp.forEach((item) => {
   item.addEventListener('click', () => {
     toShow(sortMaxCp(pokemonListing, item.innerHTML));
@@ -111,3 +108,5 @@ btnModal.addEventListener('click', () => {
   const mimodal = crearModalTexto('Mi modal de ejemplo y mi texto');
   mostrarModal(mimodal);
 });
+
+toShow(pokemonListing);
